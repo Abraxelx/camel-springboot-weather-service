@@ -1,0 +1,1 @@
+# camel-springboot-weather-service

@@ -40,7 +40,8 @@ public class SimpleRouteBuilder extends RouteBuilder {
                 .marshal().bindy(BindyType.Csv, WeatherEntity.class)
                 .to("file:files/output?fileName=weatherData.csv")
                 .log("{{create.csv.message}}")
-                .log("${body}");
+                .log("${body}")
+                .end();
 
     }
 
